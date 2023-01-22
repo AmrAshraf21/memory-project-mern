@@ -21,8 +21,7 @@ app.get('/',(req,res,next)=>{
   res.send("App is running");
 })
  
- /* const CONNECTION_URL =
-  "mongodb+srv://amr:amr2242001@cluster0.wdl7qor.mongodb.net/?retryWrites=true&w=majority"; */ 
+ 
  const PORT = process.env.PORT || 5000;
 mongoose
   .connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
